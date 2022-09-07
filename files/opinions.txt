@@ -1,0 +1,89 @@
+Anonyma vittnen ska tillåtas i domstolar. 
+V -2, S -2, MP -2, C -2, L -1, KD +2, M +2, SD +2
+
+Kvinnans aborträtt ska skrivas in i grundlagen. 
+V +2, S +1, MP +2, C +2, L +2, KD +2, M +2
+
+Företagens skatter ska sänkas. 
+V -2, S -2, MP +1, C +2, L +2, KD +2, M +2, SD +2
+
+Skogsägare ska få stärkt äganderätt. 
+V -2, S +1, MP -1, C +2, L +1, KD +2, M +2, SD +2
+
+En särskild miljonärsskatt ska införas. 
+V +2, S +2, MP +2, C -2, L -2, KD -2, M -2, SD -2
+
+En ny folkräkning ska genomföras. 
+V -1, S -1, MP -1, C -1, L +2, KD +2, M +2, SD +2
+
+Företagens regelbörda ska minska. 
+V -1, S +1, MP +2, C +2, L +2, KD +2, M +2
+
+Biståndet ska sänkas. 
+V -2, S -2, MP -2, C -2, L -2, KD -2, M +2, SD +2
+
+Tandvård ska subventioneras som sjukvård. 
+V +2, S +2, MP +2, C +1, L +1, KD +1, M -1, SD +1
+
+Fri hyressättning ska införas. 
+V -2, S -2, MP -2, C +1, L +1, KD +1, M +1, SD -2
+
+Mångkulturen berikar Sverige. 
+V +2, S +1, MP +2, C +2, L +1, KD +1, M -1, SD -2
+
+Färre företag ska vara momspliktiga. 
+V -2, S -2, MP +2, C +2, L +2, KD +2, M +1, SD -1
+
+Ränteavdraget för bostadslån ska trappas ned. 
+V +2, S -2, MP +1, C -1, L -2, KD +1, M -2, SD -2
+
+Kärnkraften ska byggas ut. 
+V -2, S +1, MP -2, C -1, L +2, KD +2, M +2, SD +2
+
+Föräldraförsäkringen ska delas lika mellan föräldrarna. 
+V +2, S +2, MP +1, C -1, L -1, KD -2, M -1, SD -1
+
+Sverige ska bli medlem av Nato. 
+V -2, S +2, MP -2, C +2, L +2, KD +2, M +2, SD +2
+
+En moderniserad arbetsrätt ska göra det lättare att säga upp viss personal. 
+V -2, S -2, MP -2, C +2, L +2, KD +2, M +2, SD -1
+
+Människor ska inte behöva sänka sin levnadsstandard för klimatets skull. 
+V -1, S +2, MP +1, C +1, L +1, KD +1, M +2, SD +2
+
+Gårdsförsäljning av vin och öl ska tillåtas. 
+V -2, S -1, MP -1, C +2, L +1, KD +1, M +2, SD +2
+
+Vinst i skolan ska förbjudas. 
+V +2, S +2, MP +2, C -1, L -1, KD -1, M -1, SD -1
+
+Tonåringar ska kunna dömas till fängelse. 
+V -1, S +2, MP +1, C +1, L +2, KD +2, M +2, SD +2
+
+Public service ska bantas. 
+V -2, S -2, MP -2, C -2, L -2, KD +2, M +1, SD +2
+
+Polisen ska kunna införa visitationszoner för att söka efter vapen. 
+V -2, S -2, MP -2, C -2, L -2, KD +2, M +2, SD +2
+
+Religiösa friskolor ska förbjudas. 
+V +2, S +2, MP +2, C -1, L +2, KD -2, M +1, SD +1
+
+Kostnaderna för att anställa ska minska. 
+V -2, S -1, MP +2, C +2, L +2, KD +2, M +2, SD +1
+
+Statliga museer ska ha gratis inträde. 
+V +2, S +2, MP +2, C -1, L +1, KD -2, M -2, SD +1
+
+Reduktionsplikten ska sänkas. 
+V +2, S -1, MP -2, C -2, L +1, KD +2, M +2, SD +2
+
+Språkkrav ska införas för den som söker permanent uppehållstillstånd i Sverige. 
+V -2, S +2, MP -2, C -2, L +1, KD +2, M +2, SD +2
+
+Fler jobbskatteavdrag ska införas. 
+V -2, S -2, MP -2, C +2, L +2, KD +2, M +2, SD +1
+
+Staten ska ta över ansvaret för sjukvården från regionerna. 
+V -2, S -1, MP -2, C -1, L +1, KD +2, M -1, SD +1
