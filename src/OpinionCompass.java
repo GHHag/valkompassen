@@ -66,9 +66,11 @@ public class OpinionCompass {
             boolean answerAccepted = false;
 
             while (!answerAccepted) {
+                System.out.println(
+                        "\n(" + (this.opinionList.indexOf(opinion) + 1) + "/" + (this.opinionList.size()) + ")");
                 opinion.printAlternatives();
                 System.out.print("Ange svar: ");
-                String answerStr = this.scanner.next();
+                String answerStr = this.scanner.nextLine();
 
                 try {
                     int answer = Integer.parseInt(answerStr);
@@ -86,8 +88,8 @@ public class OpinionCompass {
             }
         }
         this.user.printResult();
-        System.out.println("\n1. Spara resultat och avsluta\n2. Avsluta utan att spara resultat");
-        String saveResult = this.scanner.next();
+        System.out.println("1. Spara resultat och avsluta\n2. Avsluta utan att spara resultat");
+        String saveResult = this.scanner.nextLine();
         if (Integer.parseInt(saveResult) == 1) {
             this.resultHistory.add(this.user.getResult());
             boolean saveSuccessful = Storage.serializeResults(this.resultHistory);

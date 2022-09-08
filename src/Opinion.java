@@ -16,7 +16,7 @@ public class Opinion {
     }
 
     public void printAlternatives() {
-        System.out.println("\n" + this.toString());
+        System.out.println(this.toString());
         System.out.println("1. Instämmer helt\n" +
                 "2. Instämmer delvis\n" +
                 "3. Delvis emot\n" +
