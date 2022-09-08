@@ -1,51 +1,51 @@
 import java.util.Map;
+import java.io.Serializable;
+import java.util.Date;
 import java.util.HashMap;
 
-public class Result {
+public class Result implements Serializable {
 
+    private User user;
     private Map<String, Integer> partyScores;
+    private Date date;
+    private int opinionRange;
+    private int numOfOpinions;
 
-    public Result() {
+    public Result(User user) {
+        this.user = user;
         this.partyScores = new HashMap<String, Integer>();
+        this.date = new Date();
+        this.opinionRange = 4;
+        this.numOfOpinions = 0;
     }
 
-    public String toString() {
-        String partyResults = "\nDitt resultat:\n";
-        for (Map.Entry<String, Integer> partyScore : this.partyScores.entrySet()) {
-            partyResults += partyScore.getKey() + ": " + partyScore.getValue() + "%\n";
-        }
-        return partyResults;
+    public void printResult() {
+        System.out.println("\nResultat: ");
+        this.partyScores.entrySet().stream()
+                .sorted((k1, k2) -> -k1.getValue().compareTo(k2.getValue()))
+                .forEach(k -> System.out.println(k.getKey() + ": " + k.getValue() + "%"));
+        System.out.println("Användare: " + this.user.getName() + "\nDatum & tid: " +
+                this.date.toString() + "\n");
     }
 
     public void updatePartyScores(Map<String, Integer> partyScores) {
         for (Map.Entry<String, Integer> partyScore : partyScores.entrySet()) {
-            // System.out.println();
-            // System.out.println("key att uppdt: " + partyScore.getKey());
             if (this.partyScores.get(partyScore.getKey()) == null) {
-                this.partyScores.put(
-                        partyScore.getKey(),
-                        partyScore.getValue());
-                // (29 * 4) / 2); // landgen av questionsArray * max score / 2 för att få 50%
-                // score
+                this.partyScores.put(partyScore.getKey(), this.opinionRange - Math.abs(partyScore.getValue()));
             } else {
-                // System.out.println("val före uppdt: " +
-                // this.partyScores.get(partyScore.getKey()));
-                this.partyScores.put(
-                        partyScore.getKey(),
-                        this.partyScores.get(partyScore.getKey()) + partyScore.getValue());
+                this.partyScores.put(partyScore.getKey(),
+                        this.partyScores.get(partyScore.getKey()) +
+                                (this.opinionRange - Math.abs(partyScore.getValue())));
             }
-            // System.out.println("val efter uppdt: " +
-            // this.partyScores.get(partyScore.getKey()));
         }
+        this.numOfOpinions++;
     }
 
-    public void calculatePercentageScores() {
-        int x = 29 * 4;
-        float ps = x / this.partyScores.size();
+    public void calculatePercentages() {
         for (Map.Entry<String, Integer> partyScore : this.partyScores.entrySet()) {
-            System.out.println(50 * (partyScore.getValue() / ps));
-            this.partyScores.put(
-                    partyScore.getKey(), (int) (50 * (partyScore.getValue() / ps)));
+            double partyPercentage = (double) partyScore.getValue()
+                    / ((double) this.opinionRange * (double) this.numOfOpinions) * 100 + 0.5;
+            this.partyScores.put(partyScore.getKey(), (int) partyPercentage);
         }
     }
 

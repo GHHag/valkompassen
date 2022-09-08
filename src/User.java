@@ -1,17 +1,22 @@
+import java.io.Serializable;
 import java.util.Map;
 
-public class User {
+public class User implements Serializable {
 
     private String name;
     private Result result;
 
     public User(String name) {
         this.name = name;
-        this.result = new Result();
+        this.result = new Result(this);
     }
 
     public String getName() {
         return this.name;
+    }
+
+    public Result getResult() {
+        return this.result;
     }
 
     public void putResult(Map<String, Integer> partyScores) {
@@ -19,8 +24,8 @@ public class User {
     }
 
     public void printResult() {
-        this.result.calculatePercentageScores();
-        System.out.println(this.result.toString());
+        this.result.calculatePercentages();
+        this.result.printResult();
     }
 
 }

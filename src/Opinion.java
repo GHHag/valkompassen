@@ -15,7 +15,7 @@ public class Opinion {
         return this.opinion;
     }
 
-    public void prompt() {
+    public void printAlternatives() {
         System.out.println("\n" + this.toString());
         System.out.println("1. Instämmer helt\n" +
                 "2. Instämmer delvis\n" +
@@ -26,9 +26,7 @@ public class Opinion {
     public Map<String, Integer> getPartyScoreResult(int answer) {
         Map<String, Integer> partyScoreResults = new HashMap<String, Integer>();
         for (Map.Entry<String, Integer> partyScore : this.partyScores.entrySet()) {
-            partyScoreResults.put(
-                    partyScore.getKey(),
-                    answer * partyScore.getValue());
+            partyScoreResults.put(partyScore.getKey(), partyScore.getValue() - answer);
         }
         return partyScoreResults;
     }
